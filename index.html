@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    let calc = function(num1, num2, opp) {
+      if (opp === "+") {
+        alert(num1 + num2)
+      }
+      else if (opp === "-") {
+        alert(num1 - num2)
+      }
+      else if (opp === "*") {
+        alert(num1 * num2)
+      }
+      else if (opp === "/") {
+        alert(num1 / num2)
+      }
+    }
+    //ask the user if they would like to play a game
+    let start = "x"
+    let play = prompt("Do you want to play a game? Enter y or n ");
+
+    //if yes - start the calculation game
+    if (play === 'y') {
+      let start = 'y';
+      while (start === 'y') {
+        let num1 = prompt('Enter the first value');
+        let num2 = prompt('Enter second value');
+        let opp = prompt('Which operation are you using?');
+        calc(num1, num2, opp);
+        start = prompt("Do you wish to keep playing?")
+        
+
+      }
+    }
+  </script>
+</body>
+
+</html>
